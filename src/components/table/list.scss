@@ -1,0 +1,30 @@
+.cellWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+
+  .image {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  .sta
+  tus {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold; // Optional, for emphasis
+
+    &.Approved {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.329);
+    }
+
+    &.Pending {
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.247);
+    }
+  }
+}

@@ -15,7 +15,7 @@ const rows = [
     customerName: "John Doe",
     amount: 750,
     paymentMethod: "Credit Card",
-    status: "Approved ",
+    status: "approved ",
     date: "2024-08-11",
   },
   {
@@ -25,7 +25,7 @@ const rows = [
     customerName: "Jane Smith",
     amount: 750,
     paymentMethod: "PayPal",
-    status: "Pending",
+    status: "pending",
     date: "2024-08-10",
   },
   {
@@ -35,7 +35,7 @@ const rows = [
     customerName: "Alice Johnson",
     amount: 750,
     paymentMethod: "Debit Card",
-    status: "Approved",
+    status: "approved",
     date: "2024-08-09",
   },
   {
@@ -45,7 +45,7 @@ const rows = [
     customerName: "Bob Brown",
     amount: 750,
     paymentMethod: "Bank Transfer",
-    status: "Pending",
+    status: "pending",
     date: "2024-08-08",
   },
 ];

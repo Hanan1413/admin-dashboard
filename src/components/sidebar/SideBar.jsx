@@ -11,12 +11,16 @@ import PsychologyRoundedIcon from "@mui/icons-material/PsychologyRounded";
 import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Hananadmin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          {" "}
+          <span className="logo">Hananadmin</span>
+        </Link>
       </div>
       <hr />
 
@@ -29,14 +33,22 @@ const SideBar = () => {
           </li>
           <p className="title"> LISTS</p>
 
+          <Link to="/users" style={{textDecoration:"none", color:'none'}}>
           <li>
-            <PersonIcon className="icon" />
-            <span>Users</span>
+          <PersonIcon className="icon" />
+
+            <span> Users </span>
           </li>
+          </Link>
+
+          <Link to="/products" style={{textDecoration:"none", color:'none'}}>
+
           <li>
             <StoreRoundedIcon className="icon" />
             <span>Products</span>
           </li>
+
+          </Link>
           <li>
             <ChecklistRoundedIcon className="icon" />
             <span>Orders</span>
@@ -82,17 +94,11 @@ const SideBar = () => {
         </ul>
       </div>
       <div className="bottom">
-        <p >THEME</p>
-      
-        <div className="colorOption">
- 
-        </div>
-        <div className="colorOption">
-          
-          </div>
-          <div className="colorOption">
-          
-          </div>
+        <p>THEME</p>
+
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
       </div>
     </div>
   );

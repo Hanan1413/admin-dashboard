@@ -1,0 +1,97 @@
+
+
+.single{
+    display: flex;
+    width: 100%;
+
+    .singleContainer{
+        flex:6;
+
+        .top{
+            padding: 20px;
+            display: flex;
+            gap: 50px;
+        }
+        .left{
+            flex: 1;
+            -webkit-box-shadow: -1px 7px 22px -8px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 7px 22px -8px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 7px 22px -8px rgba(0, 0, 0, 0.75);
+            padding-left: 20px;
+            position: relative;
+
+
+
+            .title{
+                color: #3d3d3d;
+            }
+            .editButton{
+                position: absolute;
+                top:20px;
+                right:20px;
+                margin-top: 10px;
+                padding: 5px;
+                cursor: pointer;
+                color: #7451f8;
+                background: #7551f818;
+
+            }
+
+            .item{
+                display: flex;
+                gap: 20;
+            
+            }
+
+            .itemImg{
+                width: 400px;
+                height: 150px;
+                object-fit: contain;
+                margin: auto;
+                border-radius: 10%;
+            }
+
+            .details{
+
+                  margin-bottom: 50px;
+
+                .itemTitle{
+                    margin-bottom: 10px;
+                    color: #555;
+                    margin-bottom:  15px;
+                }
+
+                .deatailItem{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    color: #3d3d3d;
+                    
+                }
+
+                .itemKey{
+                    font-weight: bold;
+                    color: gray;
+
+                    .itemValue{
+                        font-weight: 300;
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .right{
+            flex:2;
+            
+        }
+    }
+
+    .bottom{
+        -webkit-box-shadow: -1px 7px 22px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 7px 22px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 7px 22px -8px rgba(0, 0, 0, 0.75);
+        margin:20px;
+        padding: 20px;
+    }
+}

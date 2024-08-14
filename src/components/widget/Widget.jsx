@@ -6,6 +6,7 @@ import {
 import "./widget.scss";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import { Link } from "react-router-dom";
 
 const Widget = ({ user, order, earning, balance, type }) => {
   let data;
